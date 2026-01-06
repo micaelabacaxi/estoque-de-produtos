@@ -9,7 +9,8 @@ dic_produtos = { "cafe": {"preco": 500, "quantidade": 100},
 
 produto_buscado = input("qual produto voce esta procurando?  ")
 produto_buscado = produto_buscado.lower().split(',')
-try:
+for produto_buscado in dic_produtos
+    preco = dic_produto
     if produto_buscado in dic_produtos:
         print(f"produto {produto_buscado} disponivel para venda")
         preco = dic_produtos[produto_buscado]
@@ -24,4 +25,5 @@ try:
 except KeyError:
     print(f"desculpe, o produto {produto_buscado} nao esta disponivel em estoque.")
 except ValueError:
+
     print("quantidade invalida, por favor insira um numero inteiro.")   
